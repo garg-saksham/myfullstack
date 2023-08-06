@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> html button</title>
+    <style>
+     .mybutton {
+        background-color: aqua;
+        color: brown;
+        padding: 5px 10px;
+        font-size: 20px;
+        /* font-family: sans-serif; */
+        
+        transition: all 3s;
+    }
+    .mybutton:hover{
+            background-color: brown; 
+            color: black;
+            width: 200px;
+            height: 200px;      
+            /* border-radius: 50%; 
+             */
+             border-radius: 30px 20px;
+
+        }
+        .myimage:hover{
+            transform: rotate(90deg);
+            transition: all 5s;
+        }
+    </style>
+</head>
+<body>
+    <button class="mybutton">home</button><br><br><br>
+    <img src="image/download.jfif" alt="erroe" class="myimage">
+    <br>
+
+
+    <!-- creating  a button without button tag -->
+    <a href="#" class="mybutton" style="text-decoration: none; ">hello</a>
+    
+</body>
+</html>
