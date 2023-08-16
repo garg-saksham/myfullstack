@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+    .cont{
+        width: 100vw;
+        height: 100vh;
+        border: 5px solid black;
+        background-color: antiquewhite;
+        box-sizing: border-box;
+
+    }
+    .box1{
+        width: 200px;
+         height: 100px;
+         background-color: brown;
+         border-radius: 50px;
+         margin: 10px;
+         position: relative;
+         animation-name: rightmove;
+         animation-duration: 5s;
+         animation-iteration-count: infinite;
+         animation-delay: 2s;
+         animation-timing-function:linear;
+         animation-direction: alternate;
+         animation-fill-mode: backwards;
+
+
+    }
+    @keyframes rightmove {
+        from{
+            top: 0px;
+            left: 0px;
+        }
+        to{
+            top: 0px;
+            left: 1350px;
+        }}
+    #box2{
+         width: 200px;
+         height: 100px;
+         background-color: brown;
+         border-radius: 50px;
+         margin: 10px;
+         position: relative;
+         animation-name: leftmove;
+         animation-duration: 5s;
+         animation-iteration-count: infinite;
+         animation-delay: 2s;
+         animation-timing-function:linear;
+         animation-direction: alternate;
+         animation-fill-mode: backwards;
+
+
+    }
+    @keyframes leftmove {
+        from{
+            top: 470px;
+            left: 1350px;
+        }
+        to{
+            top: 470px;
+            left: 0px;
+        }
+        
+    }
+    #circle{
+        width: 100px;
+         height: 100px;
+         background-color: brown;
+         border-radius: 50%;
+         margin: 10px;
+         position: relative;
+         top: 150px;
+         left: 675px;
+         animation-name: circlemove;
+         animation-duration: 5s;
+         animation-iteration-count: infinite;
+         animation-delay: 2s;
+         animation-timing-function:linear;
+         animation-direction: alternate;
+         animation-fill-mode: backwards;
+
+
+    }
+    @keyframes  circlemove{
+        0%{
+            top: 5px;
+         left: 5px;
+
+        }
+        30%{top: 200px;
+         left: 675px;
+           
+        }
+        60%{
+            top: 5px;
+         left: 1345px;
+
+            
+
+        }
+        100%{
+            top: 200px;
+         left: 1345px;
+
+        }
+        
+    }
+</style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box1"></div>
+   
+    <div id="box2"></div>
+    <div id="circle"></div> </div>
+</body>
+</html>

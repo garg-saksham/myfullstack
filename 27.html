@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating table</title>
+
+    <!-- linking a fevicon -->
+
+    
+
+    <link rel="icon" href="/xyaa.ico" type="image/x-icon">
+    <style>
+        table,th,td{
+            border: 1px solid red;
+            border-collapse: collapse;
+            /* this is more power ful then cellspacing */
+            
+
+        }
+    </style>
+</head>
+<body>
+    <!-- inline css -->
+    <p style="font-size: 50px;color: red;background-color: green; ">this is a <span style="color: yellow;"> paragraph</span></p>
+
+
+    <!-- craete an image clickable -->
+    <a href="https://www.youtube.com/" target="_blank"><img src="/image/download.jfif" alt="error"></a><br>
+        
+        <caption><center>students data</center></caption>
+    <!-- <table border = "1" cellpadding="30" cellspacing ="0"> -->
+        <table style="width :100% ;text-align: center; " cellspacing = "100">
+        <!-- cellpadding spaace badata h or cellspacing border ke space ko badat h -->
+        <tr style="color: blue; height: 50px;" >
+            <th colspan ="2">f.name</th><th>class</th><th>roll no </th>
+        </tr>
+        <tr> <td rowspan="2">saksham</td><td>garg</td>
+        <td>2nd sem</td><td>221</td>
+
+        </tr>
+        <tr><td>jain</td><td>3rd sem</td><td>321</td></tr>
+        <tr><td>raghav</td><td>agrawal</td><td>4rd sem</td><td>021</td></tr>
+
+    </table>
+    
+</body>
+</html>

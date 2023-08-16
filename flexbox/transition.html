@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: rgb(33, 169, 196);
+            border: 2px solid black;
+            /* transition-property: all;
+            transition-duration: 4s;
+            transition-delay: 1s;
+            transition-timing-function: ease-in-out; */
+            /* shorthand notation for transition property */
+            /* transition: all 2s ease-in-out; */
+            
+
+            /* we can apply multiple transitioin property by using comma */
+            transition: width 2s , height 5s;
+
+
+        }
+        .box:hover{
+            width: 1350px;
+            height: 500px;
+            background-color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

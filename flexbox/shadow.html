@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadow</title>
+    <style>
+        :root{
+            --primary-color:brown;
+            --custom-width:330px;
+        }
+        .cont{
+            
+            background-color: antiquewhite;
+            border: 2px solid black;
+           height: 650px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           
+
+
+
+        }
+        #box{
+            background-color: aquamarine;
+            height: 330px;
+            width: var(--custom-width);
+            /* width: 300; */
+            /* above both line have same width */
+
+            border: 1px solid brown;
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: 5px 10px brown; */
+            /* box-shadow: 5px 10px 5px brown; */
+            /* box-shadow: 5px 10px 5px 7px brown; */
+            /* box-shadow: inset 5px 10px brown; */
+            /* box-shadow: 5px 10px brown , 6px 15px green; */
+
+
+
+
+           
+        }
+        h2{
+            /* text-shadow: 4px 3px brown; */
+            
+            /* text-shadow: brown  4px 3px; */
+            /* text-shadow: brown  4px 3px 4px; */
+
+            /* below line for multiple collor text shadow */
+            text-shadow:   2px 2px 3px rgb(131, 210, 13) ,  4px 3px 1px rgb(227, 11, 32);
+            
+            /* x-offset y-offset blure color: ; */
+            /*  color x-offset y-offset blure  ; */
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        
+    <div id="box">
+    <img src="photo-1541963463532-d68292c34b19.jfif" width="300px"height="100px" alt="error">
+    <h2>this is me</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis vero officiis aliquam ipsa blanditiis vitae, necessitatibus cum nobis </p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position of block</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0 px;
+        }
+        img{
+            margin: 10px;
+            display: inline;
+            
+        }
+        .image1{
+            position: relative;
+            /* it,s position is according to it,s closest ensistor(parent-body)  it maintian gap of image*/
+            top: 30px;
+            left: 30px;
+
+
+          
+        }
+        .image2{
+         
+            position: absolute;
+            /* it,s position is according to it,s closest ensistor(parent-body)  it  dosn't maintian gap of image*/
+            top: 100px;
+            left: 100px;
+
+        }
+        .image3{
+               
+        }
+        .image4{
+
+        }
+        .container{
+            position: relative;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- by defyalt image is inline tag -->
+    <div class="container">
+        <img src="image/images.jfif" alt="first image" width="200px" height="200px" class="image1">
+        <img src="image/istockphoto-1146517111-612x612.jpg" alt="second image" width="200px" height="200px" class="image2">
+        <img src="image/photo-1503023345310-bd7c1de61c7d.jfif" alt="third image" width="200px" height="200px" class="image3">
+        <img src="image/photo-1541963463532-d68292c34b19.jfif" alt="fourth image" width="200px" height="200px" class="image4">
+    </div>
+    
+    
+</body>
+</html>

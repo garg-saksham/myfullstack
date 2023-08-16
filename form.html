@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html form</title>
+    <style>
+        .box{
+            margin: 0S auto;
+            border: 5px solid red;
+            background-color: rgb(24, 103, 173);
+            outline: 5px dotted black;
+            outline-offset: 2px ;
+            background-image: url(image/images-30-largejpg.jpg);
+            background-size: cover;
+        }
+        .mybutton{
+            background-color: green;
+            border: 3px solid black;
+            border-radius: 3px 3px;
+            margin: 5px;
+        }
+        .mybutton:hover{
+            position: relative;
+            background-color: aqua;
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+    </style>
+
+</head>
+<body>
+    <form >
+        <div class="box">
+        <fieldset>
+            <legend>name</legend>
+        <label for="name" >first name :</label>
+        <!-- <input type="text" id="name"  required placeholder="enter your name"><br><br> -->
+        <input type="text" id="name" required  placeholder="enter your first  name"><br><br>
+        <label for="name">last name :</label>
+        <input type="text" id="name"  placeholder="enter your last  name">
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Gender</legend>
+            <label for="genderm">
+                <input type="radio" name="gender" id="genderm">male
+            </label>
+            <label for="genderf">
+                <input type="radio" name="gender" id="genderf">female
+            </label>
+            <label for="gendert">
+                <input type="radio" name="gender" id="gendert">transgennder
+            </label>
+        </fieldset>
+        <br>
+        
+
+        
+        
+        <label for="mail">email :</label>
+        <!-- <input type="email" disabled id="mail"> -->
+        <input type="email"  id="mail"><br><br>
+        
+        <label for="mail">address :</label>
+        <input type="text" id="mail" style="width: 80%;"> <br><br>
+        <label for="pin">pincode:</label>
+        <input type="number"  id="pin" ><br><br>
+        <h1>payment information</h1>
+        <select name="cardname" id="card">
+            <option value="no-card">--Select your payment option--</option>
+            <optgroup label="UPI" >
+                <option value="phone pay"> ppay</option>
+                <option value="paytm"> ptm</option>
+                <option value="gpay"> gpay</option>
+
+            </optgroup>
+            <optgroup label="cardtype" >
+                <option value="debit"> debit</option>
+                <option value="credit"> credit</option>
+                <option value="rozerpay"> rozer pay</option>
+
+            </optgroup>
+
+
+        </select><br><br>
+        <label for="cardno.">cardno.:</label>
+        <input type="numbar" id="cardno."><br><br>
+        <label for="cardno2.">validity till:</label>
+        <input type="month" name="cardno2." id="cardno2."><br><br>
+        <label for="cardno3.">cvv.:</label>
+        <input type="password" name="cardno3." id="cardno3."><br><br>
+        <div >
+        <input type="submit" class="mybutton"   value="paynow">
+        <!-- for this line hover will not work bcoz it is defined inline and priority of inline is higher then any thing -->
+        <input type="reset" class="mybutton" style="background-color: rgb(215, 21, 21);" value="reset">
+    </div>
+        
+    </div>
+    
+    
+
+    </form>
+
+    
+</body>
+</html>
